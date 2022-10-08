@@ -1,0 +1,5 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.12.1
+transformers==4.21.2
+sentencepiece==0.1.97
+pandas==1.4.2
