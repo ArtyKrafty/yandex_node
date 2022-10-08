@@ -1,3 +1,12 @@
+1. [Создание сервисного аккаунта](#https://cloud.yandex.ru/docs/iam/operations/sa/create)
+2. [Создание авторизованных ключей](#https://cloud.yandex.ru/docs/iam/operations/authorized-key/create)
+3. [Настроить окружение для развертывания самостоятельного сервиса](#https://cloud.yandex.ru/docs/datasphere/operations/deploy/node-customization)
+4. [API-ноды](#https://cloud.yandex.ru/docs/datasphere/operations/deploy/node-api)
+5. [IAM-token](#https://cloud.yandex.ru/docs/iam/operations/iam-token/create-for-sa) для запроса в ноду
+
+
+
+
 ```python
 import requests
 import json
