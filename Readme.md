@@ -1,8 +1,8 @@
-1. [Создание сервисного аккаунта](#https://cloud.yandex.ru/docs/iam/operations/sa/create)
-2. [Создание авторизованных ключей](#https://cloud.yandex.ru/docs/iam/operations/authorized-key/create)
-3. [Настроить окружение для развертывания самостоятельного сервиса](#https://cloud.yandex.ru/docs/datasphere/operations/deploy/node-customization)
-4. [API-ноды](#https://cloud.yandex.ru/docs/datasphere/operations/deploy/node-api)
-5. [IAM-token](#https://cloud.yandex.ru/docs/iam/operations/iam-token/create-for-sa) для запроса в ноду
+1. [Создание сервисного аккаунта](https://cloud.yandex.ru/docs/iam/operations/sa/create)
+2. [Создание авторизованных ключей](https://cloud.yandex.ru/docs/iam/operations/authorized-key/create)
+3. [Настроить окружение для развертывания самостоятельного сервиса](https://cloud.yandex.ru/docs/datasphere/operations/deploy/node-customization)
+4. [API-ноды](https://cloud.yandex.ru/docs/datasphere/operations/deploy/node-api)
+5. [IAM-token](https://cloud.yandex.ru/docs/iam/operations/iam-token/create-for-sa) для запроса в ноду
 
 
 
@@ -11,7 +11,7 @@
 import requests
 import json
 ```
-
+1. Создание модели
 
 ```python
 from transformers import T5ForConditionalGeneration, T5Tokenizer
@@ -75,21 +75,6 @@ df.head()
 
 
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -110,7 +95,7 @@ df.head()
 </table>
 </div>
 
-
+2. Инференс модели
 
 
 ```python
@@ -123,7 +108,7 @@ summarize_news(URL)
     ['Встреча началась с песенки о дружбе. Участники встречи отвечали на вопросы викторины, рассказывали пословицы о дружбе.',
      'Амурский тигр и дальневосточный леопард спасены от угрозы полного исчезновения.']
 
-
+3. Api ноды
 
 ```python
 
@@ -177,7 +162,7 @@ req
     <Response [200]>
 
 
-
+4. Результат запроса в ноду
 
 ```python
 req.json()["output"]["outputs"]
@@ -188,7 +173,9 @@ req.json()["output"]["outputs"]
 
     ['Встреча началась с песенки о дружбе. Участники встречи отвечали на вопросы викторины, рассказывали пословицы о дружбе.',
      'Амурский тигр и дальневосточный леопард спасены от угрозы полного исчезновения.']
-     
+
+5. Bonus
+
 Пример bash-скрипта для создания токена (чтобы добавить разрешение на его работу сначала `chmod +x ./my_script.sh`)
 
 ```bash
