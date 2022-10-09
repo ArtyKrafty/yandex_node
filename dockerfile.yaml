@@ -1,0 +1,9 @@
+FROM ubuntu:18.04
+ENV DEBIAN_FRONTEND noninteractive
+RUN useradd -ms /bin/bash --uid 1000 jupyter\
+ && apt update\
+ && apt install -y python3.8-dev python3.8-distutils curl\
+ && ln -s /usr/bin/python3.8 /usr/local/bin/python3\
+ && curl https://bootstrap.pypa.io/get-pip.py | python3
+COPY requirments.txt /home/jupyter/requirments.txt
+RUN pip install -r /home/jupyter/requirments.txt
