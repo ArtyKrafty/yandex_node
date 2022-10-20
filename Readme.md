@@ -7,7 +7,7 @@
 4. [API-ноды](https://cloud.yandex.ru/docs/datasphere/operations/deploy/node-api)
 5. [IAM-token](https://cloud.yandex.ru/docs/iam/operations/iam-token/create-for-sa) для запроса в ноду
 
-Содержание [видео по ноде](https://drive.google.com/file/d/1c29Q0ERSof-8Rxqa_cEmah7W9pcB9Okj/view?usp=sharing)
+Содержание [видео по ноде](https://www.youtube.com/watch?v=Vu6ojhNJbJg)
 
 00:00:00 - Вступление.  
 00:01:51 - Модель и постановка задачи.    
